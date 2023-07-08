@@ -1,0 +1,17 @@
+@mixin flex($justify, $aligin) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $aligin;
+}
+
+@mixin gradientUnderText() {
+    /* BORDER */
+    border: 3px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+
+    border-image-source: -webkit-linear-gradient(90deg, rgba(231, 39, 255, 0.6) 0%, rgba(151, 71, 255, 0.6) 100%);
+}

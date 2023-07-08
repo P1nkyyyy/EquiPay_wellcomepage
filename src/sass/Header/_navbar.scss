@@ -1,0 +1,49 @@
+.navigation {
+    @include flex(space-between, center);
+    padding: 1rem 2rem;
+    max-width: $sectionWidth;
+    margin: 0 auto;
+
+    img {
+        width: 90px;
+    }
+
+    .menu {
+        display: flex;
+        gap: clamp(0.75rem, 4vw, 2rem);
+
+        li {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: var(--main-color);
+                transform-origin: bottom right;
+                transition: transform 0.25s ease-out;
+            }
+            &:hover::after,
+            &:active::after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+
+            a {
+                color: var(--text-color);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .navigation {
+        padding: 2rem 4rem 0 4rem;
+    }
+}

@@ -1,0 +1,95 @@
+.about {
+    max-width: $sectionWidth;
+    margin: 0 auto;
+    padding: $mobileSectionPadding;
+    .about-header {
+        font-family: $mainFont;
+        text-align: center;
+        margin: 0 auto;
+
+        h2 {
+            font-size: clamp(1.75rem, 4vw, 3rem);
+            margin-bottom: 2rem;
+        }
+    }
+
+    .about-content {
+        display: grid;
+        gap: 1rem;
+        justify-items: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            max-width: 22rem;
+        }
+
+        .about-window {
+            max-width: 22rem;
+            padding: 1rem;
+            text-align: center;
+
+            span {
+                font-size: 1.2rem;
+                font-family: $mainFont;
+                @include gradientUnderText();
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .about {
+        padding: $sectionPadding;
+        .about-header {
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1rem;
+            justify-items: center;
+            align-items: center;
+
+            img {
+                width: 100%;
+                max-width: 400px;
+            }
+
+            .item-1 {
+                grid-column-start: 1;
+                grid-row-start: 1;
+            }
+
+            .item-2 {
+                grid-column-start: 3;
+            }
+            .item-3 {
+                grid-column-start: 2;
+            }
+        }
+    }
+}
+
+/* .about-window {
+            background-color: #f9f4ff;
+            margin: 2rem;
+            max-width: 25rem;
+            padding: 1rem;
+
+            /* BORDER */
+/*border: 3px solid;
+            border-image-slice: 1;
+            border-width: 3px;
+
+            border-image-source: -webkit-linear-gradient(
+                90deg,
+                rgba(231, 39, 255, 0.6) 0%,
+                rgba(151, 71, 255, 0.6) 100%
+            );
+
+            h3 {
+                font-family: $mainFont;
+                @include gradientUnderText();
+            }
+        }*/

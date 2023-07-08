@@ -1,0 +1,12 @@
+:root {
+    --main-color: #882dff;
+    --sec-color: #a057ff;
+    --text-color: #212427;
+}
+
+$sectionPadding: 3rem 4rem;
+$mobileSectionPadding: 3rem 2rem;
+$sectionWidth: 1080px;
+$sectionBackgroundColor: linear-gradient(var(--sec-color) 50%, var(--main-color) 50%);
+
+$mainFont: "Merienda", cursive;

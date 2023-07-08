@@ -1,0 +1,37 @@
+@import "./sass/variables";
+@import "./sass/mixin";
+@import "./sass/Header/hero";
+@import "./sass/Header/navbar";
+@import "./sass/Content/intro";
+@import "./sass/Content/about";
+@import "./sass/Footer/footer";
+
+html {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
