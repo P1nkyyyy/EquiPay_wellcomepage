@@ -1,5 +1,5 @@
 .navigation {
-    @include flex(space-between, center);
+    @include flex(space-between, center, none);
     padding: 1rem 2rem;
     max-width: $sectionWidth;
     margin: 0 auto;

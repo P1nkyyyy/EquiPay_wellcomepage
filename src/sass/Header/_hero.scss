@@ -1,5 +1,5 @@
 .hero {
-    @include flex(center, center);
+    @include flex(center, center, none);
     flex-direction: column;
     max-width: $sectionWidth;
     padding: $mobileSectionPadding;
@@ -12,7 +12,7 @@
     }
 
     .hero-text-part {
-        @include flex(center, center);
+        @include flex(center, center, none);
         flex-direction: column;
         gap: 1rem;
         text-align: center;
